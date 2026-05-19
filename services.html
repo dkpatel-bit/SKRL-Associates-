@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services |K S D & Co</title>
+    <meta name="description"
+        content="Explore the full range of professional CA services offered by J P Sata & Associates — Audit, Tax Advisory, Business Consulting, and more.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ── Page Banner (same as about / faq / blog / contact) ── */
+        .page-banner {
+            background-color: var(--primary-color);
+            padding: 100px 0;
+            text-align: center;
+            color: var(--white);
+            background-image: linear-gradient(rgba(11, 28, 58, 0.88), rgba(11, 28, 58, 0.88)),
+                url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .page-banner h1 {
+            color: var(--white);
+            font-size: 46px;
+            margin-bottom: 12px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: var(--secondary-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ── Services Intro ── */
+        .services-intro {
+            padding: 70px 0 30px;
+            text-align: center;
+        }
+
+        .services-intro p {
+            max-width: 700px;
+            margin: 20px auto 0;
+            font-size: 16px;
+            color: var(--text-color);
+        }
+
+        /* ── Full 10-service grid ── */
+        .services-full-section {
+            padding: 20px 0 80px;
+        }
+
+        .services-full-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* Sub-item list inside each service box */
+        .service-sub-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+
+        .service-sub-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            font-size: 14px;
+            color: var(--text-color);
+            padding: 5px 0;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .service-sub-list li:last-child {
+            border-bottom: none;
+        }
+
+        .service-sub-list li i {
+            color: var(--secondary-color);
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        /* ── CTA Strip ── */
+        .services-cta-strip {
+            background-color: var(--primary-color);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .services-cta-strip h3 {
+            color: var(--white);
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .services-cta-strip p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 991px) {
+            .services-full-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .services-full-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-banner h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <h1K S D & Co</h1>
+                    <span>Chartered Accountants</span>
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Services <i data-lucide="chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="services.html">Audit, Assurance &amp; Compliance</a></li>
+                            <li><a href="services.html">Banking &amp; Specialized Audit</a></li>
+                            <li><a href="services.html">Risk Management Advisory</a></li>
+                            <li><a href="services.html">Direct &amp; Indirect Tax Advisory</a></li>
+                            <li><a href="services.html">Business Transaction Advisory</a></li>
+                            <li><a href="services.html">Strategic &amp; Business Consulting</a></li>
+                            <li><a href="services.html">Financial Planning Advisory</a></li>
+                            <li><a href="services.html">Global &amp; Overseas Support</a></li>
+                            <li><a href="services.html">Capital Raising &amp; Funding</a></li>
+                            <li><a href="services.html">IPO &amp; Pre-Listing Compliance</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <img src="ca-logo.jpg" alt="Logo" class="side-logo">
+                <a href="tel:09819420994" class="phone-btn">
+                    <i data-lucide="phone-call"></i>
+                    <span>09819420994</span>
+                </a>
+                <button class="mobile-toggle"><i data-lucide="menu"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <div class="page-banner">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="breadcrumb">Home &nbsp; / &nbsp; Services</div>
+        </div>
+    </div>
+
+    <!-- Services Intro -->
+    <section class="services-intro container">
+        <h6 class="super-title">WHAT WE OFFER</h6>
+        <h3 class="section-heading">Comprehensive CA Services for Every Need</h3>
+        <p>From statutory compliance to strategic growth advisory, J P Sata &amp; Associates delivers expert, end-to-end
+            financial solutions tailored for businesses and individuals across industries.</p>
+    </section>
+
+    <!-- All 10 Services Grid -->
+    <section class="services-full-section">
+        <div class="container">
+            <div class="services-full-grid">
+
+                <!-- 1 -->
+                <div class="service-box">
+                    <i data-lucide="shield-check" class="service-icon"></i>
+                    <h4>Audit, Assurance &amp; Compliance</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Statutory Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Tax Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Internal Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Stock &amp; Receivable Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Forensic Accounting &amp; Investigation</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 2 -->
+                <div class="service-box">
+                    <i data-lucide="landmark" class="service-icon"></i>
+                    <h4>Banking &amp; Specialized Audit</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Statutory Branch Audit (Nationalised Banks)</li>
+                        <li><i data-lucide="chevron-right"></i> Statutory Audit of Co-operative Banks</li>
+                        <li><i data-lucide="chevron-right"></i> Concurrent Audit &amp; Revenue Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Credit / Loan Review Audit</li>
+                        <li><i data-lucide="chevron-right"></i> Forensic Audit of Borrowers</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 3 -->
+                <div class="service-box">
+                    <i data-lucide="alert-triangle" class="service-icon"></i>
+                    <h4>Risk Management Advisory</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Enterprise Risk Assessment</li>
+                        <li><i data-lucide="chevron-right"></i> Internal Control System Design &amp; Review</li>
+                        <li><i data-lucide="chevron-right"></i> SOP Development</li>
+                        <li><i data-lucide="chevron-right"></i> Fraud Risk &amp; Prevention Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Compliance Risk &amp; Governance Review</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 4 -->
+                <div class="service-box">
+                    <i data-lucide="file-text" class="service-icon"></i>
+                    <h4>Direct &amp; Indirect Tax Advisory</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Direct Tax Advisory &amp; Compliance</li>
+                        <li><i data-lucide="chevron-right"></i> Income Tax Scrutiny &amp; Representation</li>
+                        <li><i data-lucide="chevron-right"></i> GST Advisory &amp; Compliance</li>
+                        <li><i data-lucide="chevron-right"></i> GST Litigation &amp; Department Representation</li>
+                        <li><i data-lucide="chevron-right"></i> Compliance Health Check</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 5 -->
+                <div class="service-box">
+                    <i data-lucide="briefcase" class="service-icon"></i>
+                    <h4>Business Transaction &amp; Deal Advisory</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Transaction Structuring Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Financial &amp; Tax Due Diligence</li>
+                        <li><i data-lucide="chevron-right"></i> Business Valuation &amp; Feasibility Support</li>
+                        <li><i data-lucide="chevron-right"></i> Mergers, Acquisitions &amp; Business Transfer</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 6 -->
+                <div class="service-box">
+                    <i data-lucide="trending-up" class="service-icon"></i>
+                    <h4>Strategic &amp; Business Consulting</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Business Strategy &amp; Growth Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Budgeting, Forecasting &amp; Financial Planning</li>
+                        <li><i data-lucide="chevron-right"></i> MIS Design &amp; Performance Monitoring</li>
+                        <li><i data-lucide="chevron-right"></i> Cost Control &amp; Profitability Improvement</li>
+                        <li><i data-lucide="chevron-right"></i> Operational Efficiency &amp; Process Consulting</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 7 -->
+                <div class="service-box">
+                    <i data-lucide="bar-chart-2" class="service-icon"></i>
+                    <h4>Financial Planning &amp; Corporate Advisory</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Project Reports &amp; CMA Data Preparation</li>
+                        <li><i data-lucide="chevron-right"></i> Working Capital Planning &amp; Optimization</li>
+                        <li><i data-lucide="chevron-right"></i> Capital Structuring Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Cash Flow Forecasting &amp; Projections</li>
+                        <li><i data-lucide="chevron-right"></i> Virtual CFO &amp; Finance Office Support</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 8 -->
+                <div class="service-box">
+                    <i data-lucide="globe" class="service-icon"></i>
+                    <h4>Global Business &amp; Overseas Support</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Outsourced Bookkeeping &amp; Accounting</li>
+                        <li><i data-lucide="chevron-right"></i> Offshore Support for CPA Firms</li>
+                        <li><i data-lucide="chevron-right"></i> Payroll Processing &amp; Compliance Support</li>
+                        <li><i data-lucide="chevron-right"></i> Year-End Finalization &amp; Audit Support</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 9 -->
+                <div class="service-box">
+                    <i data-lucide="dollar-sign" class="service-icon"></i>
+                    <h4>Capital Raising &amp; Funding Advisory</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Bank Finance &amp; Loan Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Project Finance &amp; Funding Structuring</li>
+                        <li><i data-lucide="chevron-right"></i> Equity &amp; Investor Funding Support</li>
+                        <li><i data-lucide="chevron-right"></i> Debt Restructuring &amp; Stressed Account Advisory</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <!-- 10 -->
+                <div class="service-box">
+                    <i data-lucide="clipboard-list" class="service-icon"></i>
+                    <h4>IPO &amp; Pre-Listing Compliance</h4>
+                    <ul class="service-sub-list">
+                        <li><i data-lucide="chevron-right"></i> Pre-IPO Readiness &amp; Structuring Advisory</li>
+                        <li><i data-lucide="chevron-right"></i> Restatement of Financial Statements</li>
+                        <li><i data-lucide="chevron-right"></i> Tax &amp; Litigation Due Diligence</li>
+                        <li><i data-lucide="chevron-right"></i> IPO Financial Due Diligence Support</li>
+                        <li><i data-lucide="chevron-right"></i> DRHP / RHP Preparation Support</li>
+                    </ul>
+                    <a href="contact.html" class="read-more">Enquire Now <i data-lucide="arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="services-cta-strip">
+        <div class="container">
+            <h3>Need Expert CA Guidance?</h3>
+            <p>Our team is ready to help you navigate every financial challenge with clarity and confidence.</p>
+            <a href="contact.html" class="btn btn-primary">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container footer-grid">
+                <div class="footer-widget">
+                    <a href="index.html" class="footer-logo">
+                        <h2>CA Karan A. Bhuva &amp; Associates</h2>
+                    </a>
+                    <p class="footer-desc">Your trusted partner for Audit, Tax, and Financial Advisory services.
+                        Navigating complexities with precision.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ca-jayesh-sata-54685b23a/" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"
+                                style="width:20px;"></a>
+                        <a href="https://wa.me/919033221909" target="_blank"><img
+                                src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"
+                                style="width:20px;"></a>
+                    </div>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">Audit &amp; Assurance</a></li>
+                        <li><a href="services.html">Direct &amp; Indirect Tax</a></li>
+                        <li><a href="services.html">Business Advisory</a></li>
+                        <li><a href="services.html">Strategic Consulting</a></li>
+                        <li><a href="services.html">Global Business Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget contact-widget">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>
+                            <i data-lucide="map-pin"></i>
+                            <span>Parimal chowk, Shanti Sky, 511, Waghawadi Rd., Hill Drive, Bhavnagar, Gujarat
+                                364002</span>
+                        </li>
+                        <li>
+                            <i data-lucide="phone"></i>
+                            <span>09819420994</span>
+                        </li>
+                        <li>
+                            <i data-lucide="mail"></i>
+                            <span>office@jpsata.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 K S D & Co &amp; Associates. All Rights Reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
